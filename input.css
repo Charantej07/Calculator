@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .calc-btn {
+    @apply p-4 px-5 rounded-md text-lg text-calc-text-white font-semibold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+      -5px -5px 10px rgba(255, 255, 255, 0.1);
+  }
+  .calc-btn-click {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2) inset,
+      -5px -5px 10px rgba(255, 255, 255, 0.1) inset;
+  }
+
+  .opr {
+    @apply text-calc-opr-green;
+  }
+}
